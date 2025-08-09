@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Jeff</title>
+  <script src="https://kit.fontawesome.com/de6e71d653.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Jeff home">
+      <span class="logo__word">JE</span>
+    </a>
+
+    <nav class="nav nav-centered">
+      <div class="nav-pill">
+        <a href="index.html" data-underline>Home</a>
+        <a href="projects.html" data-underline>Projects</a>
+        <a href="contact.html" data-underline aria-current="page">Contact</a>
+      </div>
+    </nav>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section class="page-intro contact-intro">
+      <h1>Get in Touch</h1>
+      <p>Share about your project or just say hi — I’ll respond within 2 business days.</p>
+    </section>
+
+    <section class="contact-grid">
+      <!-- FORM -->
+      <form name="contact" netlify netlify-honeypot="bot-field" class="contact-form combined-contact contact-card" id="contactForm" method="POST" data-netlify="true" novalidate > <input type="hidden" name="form-name" value="contact" /> <p class="hidden" style="display:none;"> <label><input name="bot-field" /></label> </p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input class="contact-form" id="name" name="name" type="text" placeholder="Your name" required/>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="contact-form" id="email" name="email" type="email" placeholder="you@example.com" required/>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea class="contact-form" id="message" name="message" rows="6" placeholder="What are you building?" required></textarea>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <button class="btn-minimal lg" type="submit">Send</button>
+      </form>
+
+      <!-- COMBINED CONTACT INFO -->
+      <aside class="contact-card card-raise combined-contact">
+        <h3>Other Ways to Connect</h3>
+        <p><strong>Email:</strong> <a href="mailto:jeffeasow663@gmail.com">jeffeasow663@gmail.com</a></p>
+        <ul class="social-list icons-only">
+          <li>
+            <a href="https://www.linkedin.com/in/jeff-easow-05722720b/" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jeffeasow/" aria-label="Instagram" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jeffeasow" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>        
+        <hr>
+        <h4>💬 Live Chat</h4>
+        <p>Coming soon — you'll be able to chat with me directly here.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jeff. All rights reserved.</p>
+    <div class="socials">
+      <a href="mailto:jeffeasow663@gmail.com" aria-label="Email">Email</a>
+      <a href="https://github.com/jeffeasow" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/jeff-easow-05722720b/" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://www.instagram.com/jeffeasow/" aria-label="Instagram">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
